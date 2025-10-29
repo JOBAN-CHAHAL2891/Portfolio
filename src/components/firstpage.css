@@ -1,0 +1,117 @@
+*{
+    color: black;
+}
+
+.heading {
+    padding-top: 20px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading h1 {
+    letter-spacing: 10px;
+    font-size: 55px;
+    font-weight: 500;
+    border-top: 5px solid black;
+    border-bottom:5px solid black;
+    border-radius: 10px;
+    padding: 10px 50px;
+}
+
+.cont_one {
+    display: flex;
+    height: 350px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.cont_one_front {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cont_one_front .intro {
+    letter-spacing: 5px;
+    font-size: 30px;
+    padding-top: 5%;
+    margin-left: 10%;
+    margin-bottom: 10px;
+}
+
+.cont_one_front .name {
+    font-size: 45px;
+    letter-spacing: 5px;
+    margin-left: 40px;
+    padding: 30px 30px;
+}
+
+.content {
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+    margin-top: 30px;
+    margin-left: 10px;
+    padding: 20px;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    border-radius: 8px;
+}
+
+.cont_one_end {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.cont_one_end .image {
+    border-left: 20px solid rgb(185, 185, 185);
+    border-right: 20px solid rgb(185, 185, 185);
+    border-bottom: 20px solid black;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.cont_one_end .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.firstbuttons {
+    margin-left: 150px;
+    margin-top: 60px;
+    display: flex;
+    padding-bottom: 50px;
+}
+
+.firstbuttons button {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    padding: 20px;
+    border-radius: 100px;
+    margin: 0px 45px;
+    font-family: "Russo One";
+    letter-spacing: 1px;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 400;
+    min-width: 90px;
+}
+
+.firstbuttons button:hover {
+    background-color: red;
+    transition: 0.5s ease;
+}

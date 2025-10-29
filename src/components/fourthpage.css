@@ -1,0 +1,62 @@
+.fourthpage {
+    height: 100vh;
+    /* background-color: black; */
+    /* color: white; */
+}
+
+.fourheading {
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 70px;
+    margin-left: 50px;
+}
+
+.contactcont {
+    margin: 50px 30px;
+}
+
+.contact-form {
+    width: 500px;
+    /* background-color: black; */
+    /* color: white; */
+    border-radius: 8px;
+}
+
+.contact-form label {
+    display: block;
+    margin: 20px 0px 10px 0px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+::placeholder {
+    color: black;
+    font-weight: 500;
+}
+
+.contact-form button {
+    display: block;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 150px;
+    padding: 10px 15px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.contact-form button:hover {
+    background-color: red;
+}
