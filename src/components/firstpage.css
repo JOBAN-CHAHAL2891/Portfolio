@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Luckiest+Guy&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
 *{
     color: black;
 }
@@ -12,7 +16,8 @@
 
 .heading h1 {
     letter-spacing: 10px;
-    font-size: 55px;
+    font-family: "Luckiest Guy";
+    font-size: 65px;
     font-weight: 500;
     border-top: 5px solid black;
     border-bottom:5px solid black;
@@ -37,6 +42,8 @@
 .cont_one_front .intro {
     letter-spacing: 5px;
     font-size: 30px;
+    font-family: "Open Sans";
+    font-weight: 700;
     padding-top: 5%;
     margin-left: 10%;
     margin-bottom: 10px;
@@ -44,6 +51,8 @@
 
 .cont_one_front .name {
     font-size: 45px;
+    font-family: "Open Sans";
+    font-weight: 700;
     letter-spacing: 5px;
     margin-left: 40px;
     padding: 30px 30px;
@@ -52,6 +61,7 @@
 .content {
     font-size: 18px;
     font-weight: 600;
+    font-family: "Open Sans";
     font-style: italic;
     margin-top: 30px;
     margin-left: 10px;
@@ -103,11 +113,11 @@
     padding: 20px;
     border-radius: 100px;
     margin: 0px 45px;
-    font-family: "Russo One";
     letter-spacing: 1px;
     font-size: 17px;
+    font-weight: 600;
+    font-family: "Open Sans";
     text-transform: uppercase;
-    font-weight: 400;
     min-width: 90px;
 }
 

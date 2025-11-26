@@ -14,21 +14,23 @@ function Thirdpage() {
   };
 
   return (
-    <div className="projects_container">
+    <section id='projects'>
+    <div className="projects_container"  data-aos="fade-up">
       <h2>PROJECTS</h2>
 
       <Slider {...settings}>
         {projects.map((project) => (
-          <div key={project.id} className="project_card">
-            <h3>{project.name}</h3>
-            <p>{project.description}</p>
+          <div key={project.id} className="project_card"  data-aos="fade-left">
+            <h3 data-aos="fade-up">{project.name}</h3>
+            <p  data-aos="fade-right">{project.description}</p>
             <a href={project.link} target="_blank" rel="noopener noreferrer">
-              <button>View Project</button>
+              <button  data-aos="fade-down">View Project</button>
             </a>
           </div>
         ))}
       </Slider>
     </div>
+    </section>
   );
 }
 

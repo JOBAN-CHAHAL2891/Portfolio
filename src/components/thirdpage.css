@@ -5,8 +5,10 @@
 
 .projects_container h2 {
     padding: 50px 100px;
-    font-size: 30px;
+    font-family: "Luckiest Guy";
+    font-size: 40px;
     font-weight: 900;
+    letter-spacing: 3px;
 
 }
 
@@ -18,11 +20,12 @@
     height: 320px;
     background-color: rgb(185, 185, 185);
     border-radius: 50px;
+    font-family: "Open Sans";
 }
 
 .project_card h3{
     height: 150px;
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 800;
     letter-spacing: 0.5px;
     display: flex;
@@ -34,6 +37,7 @@
 
 .project_card p{
     height: 100px;
+    font-weight: 600;
     padding: 0px 20px;
     
 }
@@ -47,6 +51,7 @@ button{
     all: unset;
     height: 50px;
     width: 150px;
+    font-weight: 500;
     background-color: black;
     color: white;
     margin-left: 150px;
