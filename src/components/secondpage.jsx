@@ -6,15 +6,26 @@ import { certificates } from "../data/certificates";
 
 function Secondpage() {
 
+  let slidesToShowValue = 3;
+
+  if (window.innerWidth < 600) {
+    slidesToShowValue = 1;  // mobile
+  } else if (window.innerWidth < 900) {
+    slidesToShowValue = 2;  // tablet
+  } else {
+    slidesToShowValue = 3;  // desktop
+  }
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 600,
-    slidesToShow: 3,
+    slidesToShow: slidesToShowValue,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2500,
+    autoplaySpeed: 2500
   };
+
 
   return (
     <section id ="about">

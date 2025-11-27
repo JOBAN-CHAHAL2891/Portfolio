@@ -1,6 +1,6 @@
 .secondpage {
     background-color: white;
-    height: 140vh;
+    min-height: 140vh;
     margin-top: 15vh;
 }
 
@@ -71,3 +71,66 @@
   width: 100%;
   height: 250px;
 }
+
+/* ======================================================================================================================= */
+
+@media (max-width: 480px) {
+
+.secondheading {
+        font-size: 40px;
+        font-weight: 100;
+        margin-top: 0px;
+        margin-left: 25px;
+    }
+
+    .second_my {
+        font-size: 18px;
+        margin: 0;
+        padding: 0px 20px;
+    }
+
+    .second_subhead {
+        font-size: 25px;
+        letter-spacing: 1px;
+        font-weight: 300;
+        margin: 0;
+        margin-left: 30px;
+        margin-top: 60px;
+    }
+
+    .slang_cont {
+        margin-top: 20px;
+        overflow-x: auto;
+    }
+
+    .slang_cont .s_name {
+        font-size: 16px;
+        font-weight: 900;
+        margin: 10px;
+        min-width: 90px;
+        letter-spacing: 1px;
+        padding: 5px 15px;
+        scrollbar-color: rgb(75, 72, 72);
+    }
+
+    .certificates_section h2 {
+        font-size: 35px;
+        font-weight: 500;
+        margin-top: 60px;
+        margin-left: 20px;
+    }
+
+.certificate_card {
+  padding: 10px;
+}
+
+.certificate_card img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+}
+
+
+}
+
+

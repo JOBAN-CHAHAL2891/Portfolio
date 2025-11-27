@@ -1,50 +1,115 @@
 *{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
+/* NAV BAR CONTAINER */
 .nav{
-    background-color: black;
-    font-family: "Open Sans";
-    display: flex;
-    height: 70px;
+  background-color: black;
+  font-family: "Open Sans";
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0 20px;
 }
 
+/* HAMBURGER FIRST (hidden on desktop) */
+.menu-icon {
+  display: none;
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+}
+
+/* LOGO */
 .front{
-    color: white;
-    display: flex;
-    font-size: 25px;
-    font-weight: 700;
-    letter-spacing: 8px;
-    width: 60%;
-    justify-content: center;
-    align-items: center;
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 8px;
 }
 
-ul{
-    width: 40%;
-    font-weight: 500;
-    cursor: pointer;
-    display: flex;
-    justify-content: right;
-} 
-
-li{
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 15px;
-    text-transform: uppercase;
-    font-size: 18px;
+/* NAV LINKS (DESKTOP) */
+.nav-links{
+  width: 40%;
+  display: flex;
+  justify-content: flex-end; /* same behavior as before */
+  align-items: center;
+  gap: 0; /* keep spacing controlled by li padding */
+  list-style: none;
 }
 
-a{
-    text-decoration: none;
-    color: white;
+/* list items kept exactly as before */
+.nav-links li {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;          /* original padding preserved */
+  text-transform: uppercase;
+  font-size: 18px;
+  transition: background-color 0.5s ease; /* explicit transition */
+  border-radius: 4px; /* small radius so hover looks neat */
 }
 
-li:hover {
+/* anchors */
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  display: inline-block; /* ensure link fills the li area */
+  padding: 10px 0;       /* vertical padding so hover looks same as before */
+  width: 100%;
+  text-align: center;
+}
+
+/* hover same as original */
+.nav-links li:hover {
+  background-color: red;
+}
+
+/* =================================================================================================================*/
+
+@media (max-width: 768px) {
+
+
+  /* Show hamburger before the logo on mobile */
+  .menu-icon {
+    display: block;
+    margin-left: -60px;  
+}
+
+  /* Positioning of left area: ensure hamburger then logo */
+  .nav {
+    padding: 0 90px;
+}
+
+  /* Hide desktop menu on mobile */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: fixed;         /* sits above page */
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: black;
+    padding: 5px 0;
+    z-index: 9999;           /* above all content */
+  }
+
+  /* Open mobile menu */
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+    font-weight: 600;
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+  }
+
+  .nav-links li:hover {
     background-color: red;
-    /* transition: 0.5s ease; */
+  }
 }

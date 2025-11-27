@@ -125,3 +125,104 @@
     background-color: red;
     transition: 0.5s ease;
 }
+
+
+/* ======================================================================================================================== */
+
+@media (max-width: 480px) {
+
+
+    .heading {
+        padding-top: 0px;
+        position: relative;
+        width: 100vw;
+        margin-top: 20px;
+    }
+
+    .heading h1 {
+        font-size: 43px;
+        letter-spacing: 4px;
+        margin-left: 10px;
+        padding: 0;
+        border: none;
+    }
+
+
+    .cont_one {
+        flex-direction: column-reverse;
+        height: 488px;
+        margin-top: 50px;
+    }
+
+    .cont_one_front {
+        margin-bottom: -35px;
+    }
+
+
+    .cont_one_front .intro {
+        font-size: 28px;
+        letter-spacing: normal;
+        margin-top: 90px;
+        margin-left: 50px;
+        padding: 0px;
+    }
+
+    .cont_one_front .name {
+        letter-spacing: normal;
+        font-size: 25px;
+        margin-left: 20px;
+        margin-top: 5px;
+        padding: 0px;
+        width: 100vw
+    }
+
+    .content {
+        margin-top: 50px;
+        margin-bottom: 60px;
+        position: relative;
+        left: 20px;
+        right: 20px;
+        padding: 0px;
+        font-size: 17px;
+        width: 85vw;
+        border: none;
+    }
+
+    .cont_one_end {
+        height: 175px;
+        width: 100vw;
+        justify-content: right;
+    }
+
+    .cont_one_end .image {
+        border: none;
+        margin-right: 30px;
+        margin-top: 0px;
+        height: 250px;
+        width: 300px;
+    }
+
+    .cont_one_end .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .firstbuttons {
+        height: 30px;
+        width: 80vw;
+        margin: 50px 45px;
+        display: flex;
+        justify-content:space-evenly;
+    }
+
+    .firstbuttons button {
+        padding: 35px 20px;
+        font-size: 14px;
+        font-weight: 700;
+        margin: 0px 30px;
+        border-radius: 25px;
+        letter-spacing: normal;
+        min-width: 90px;
+    }
+}

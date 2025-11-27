@@ -5,11 +5,22 @@ import "./thirdpage.css";
 import { projects } from "../data/projects";
 
 function Thirdpage() {
+
+  let slidesToShowValue = 3;
+
+  if (window.innerWidth < 600) {
+    slidesToShowValue = 1;  // mobile
+  } else if (window.innerWidth < 900) {
+    slidesToShowValue = 2;  // tablet
+  } else {
+    slidesToShowValue = 3;  // desktop
+  }
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: slidesToShowValue,
     slidesToScroll: 1,
   };
 
@@ -23,9 +34,8 @@ function Thirdpage() {
           <div key={project.id} className="project_card"  data-aos="fade-left">
             <h3 data-aos="fade-up">{project.name}</h3>
             <p  data-aos="fade-right">{project.description}</p>
-            <a href={project.link} target="_blank" rel="noopener noreferrer">
-              <button  data-aos="fade-down">View Project</button>
-            </a>
+            <button onClick={() => window.open(project.link, "_blank")} data-aos="fade-down">View Project</button>
+            
           </div>
         ))}
       </Slider>

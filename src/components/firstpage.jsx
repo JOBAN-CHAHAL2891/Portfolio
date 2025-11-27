@@ -1,5 +1,13 @@
 import myphoto from './bg_remove.png';
 import './firstpage.css';
+import resume from "../assets/resume.pdf";
+
+<button 
+  onClick={() => window.open(resume, "_blank")}
+>
+  View Resume
+</button>
+
 
 function Firstpage() {
     return(
@@ -18,12 +26,14 @@ function Firstpage() {
                     </div>
                 </div>
                 <div class="cont_one_end"  data-aos="fade-left">
-                    <div class="image"><img src={myphoto} alt="Background"/></div>
+                    <div class="image">
+                        {/* <img src={myphoto} alt="Background"/> */}
+                    </div>
                 </div>
             </div>
             <div class="firstbuttons"  data-aos="zoom-in">
-                <button>Resume</button>
-                <button>Contact Me</button>
+                <button onClick={() => window.open(resume, "_blank")}>Resume</button>
+                <button onClick={() => window.open("https://github.com/JOBAN-CHAHAL2891", "_blank")}>Git hub</button>
             </div>
         </div>
         </section>

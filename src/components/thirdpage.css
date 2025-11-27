@@ -72,3 +72,30 @@ button:hover{
 .slick-dots li button:hover:before {
   background-color: rgb(185, 185, 185);
 }
+
+/* ================================================================================================================== */
+
+@media (max-width: 480px) {
+
+  .projects_container{
+    margin-left: 5px;
+  }
+
+  .projects_container h2{
+    font-size: 40px;
+    font-weight: 500;
+    margin-left: 30px;
+    padding: 40px 0px;
+  }
+
+  .project_card p{
+    margin-left: 35px;
+    padding: 0;
+  }
+
+  .project_card button{
+    margin-left: 110px;
+    border-radius: 12px;
+  }
+
+}
